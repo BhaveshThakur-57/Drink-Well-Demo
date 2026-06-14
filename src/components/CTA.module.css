@@ -1,0 +1,16 @@
+.section{position:relative;padding:7rem 0;overflow:hidden}
+.glowL{position:absolute;top:-100px;left:-200px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(29,155,240,.1),transparent 70%);filter:blur(80px);pointer-events:none}
+.glowR{position:absolute;bottom:-100px;right:-200px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(56,189,248,.08),transparent 70%);filter:blur(80px);pointer-events:none}
+.inner{text-align:center;max-width:700px;margin:0 auto;position:relative;z-index:2}
+.headline{font-size:clamp(2rem,4vw,2.75rem);margin-bottom:1rem}
+.sub{color:var(--muted);font-size:1.05rem;margin-bottom:2.5rem;line-height:1.7}
+.form{display:flex;flex-direction:column;gap:1rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.input,.textarea{width:100%;padding:.875rem 1.25rem;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);font-family:var(--font-body);font-size:.95rem;transition:border-color .3s;outline:none}
+.input:focus,.textarea:focus{border-color:var(--accent)}
+.input::placeholder,.textarea::placeholder{color:var(--muted)}
+.textarea{resize:vertical}
+select.input{appearance:none;cursor:pointer}
+.actions{display:flex;gap:1rem;justify-content:center;margin-top:.5rem}
+
+@media(max-width:640px){.row{grid-template-columns:1fr}.actions{flex-direction:column}.actions .btn{width:100%;justify-content:center}}

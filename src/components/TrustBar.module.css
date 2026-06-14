@@ -1,0 +1,6 @@
+.wrap{position:relative;overflow:hidden;padding:2rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-secondary)}
+.item{display:inline-flex;align-items:center;gap:.625rem;white-space:nowrap;color:var(--muted);font-size:.95rem;font-weight:500;text-transform:uppercase;letter-spacing:.1em}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.fade,.fadeR{position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
+.fade{left:0;background:linear-gradient(90deg,var(--bg-secondary),transparent)}
+.fadeR{right:0;background:linear-gradient(-90deg,var(--bg-secondary),transparent)}

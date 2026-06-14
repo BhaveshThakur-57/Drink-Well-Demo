@@ -1,0 +1,15 @@
+.slider{max-width:720px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:3rem;text-align:center}
+.quote{font-size:4rem;line-height:1;background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
+.text{font-size:1.15rem;color:var(--text);line-height:1.7;margin-bottom:2rem;font-style:italic}
+.author{display:flex;align-items:center;gap:1rem;justify-content:center}
+.avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--cyan));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:#fff}
+.name{font-weight:600}
+.role{font-size:.85rem;color:var(--muted)}
+.controls{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-top:2rem}
+.arrowBtn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .3s}
+.arrowBtn:hover{border-color:var(--accent);background:rgba(29,155,240,.08)}
+.arrowBtn svg{width:20px;height:20px}
+.dots{display:flex;gap:.5rem}
+.dot{width:8px;height:8px;border-radius:50%;border:none;background:var(--border);cursor:pointer;transition:all .3s;padding:0}
+.activeDot{background:var(--accent);width:24px;border-radius:4px}

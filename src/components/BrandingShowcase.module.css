@@ -1,0 +1,29 @@
+.filters{display:flex;gap:.75rem;justify-content:center;margin-bottom:3rem;flex-wrap:wrap}
+.filterBtn{padding:.5rem 1.25rem;border-radius:100px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:.875rem;font-weight:500;transition:all .3s;cursor:pointer}
+.filterBtn:hover{border-color:var(--accent);color:var(--text)}
+.active{background:linear-gradient(135deg,var(--accent),var(--cyan));color:#fff;border-color:transparent}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.card{position:relative;border-radius:16px;overflow:hidden;cursor:pointer;background:var(--card);border:1px solid var(--border);transition:all .4s}
+.card:hover{border-color:rgba(29,155,240,.3);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.imgWrap{position:relative;aspect-ratio:16/10;overflow:hidden}
+.img{object-fit:cover;transition:transform .6s}
+.card:hover .img{transform:scale(1.05)}
+.overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,8,22,.9),transparent);display:flex;align-items:flex-end;justify-content:center;padding:1.5rem;opacity:0;transition:opacity .4s}
+.card:hover .overlay{opacity:1}
+.viewBtn{padding:.5rem 1.25rem;border-radius:100px;background:linear-gradient(135deg,var(--accent),var(--cyan));color:#fff;font-size:.8rem;font-weight:600}
+.meta{padding:1.25rem 1.5rem}
+.cat{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:600}
+.title{margin-top:.375rem;font-size:1.1rem}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;z-index:200;background:rgba(5,8,22,.9);backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;padding:2rem}
+.lightboxContent{background:var(--bg-secondary);border:1px solid var(--border);border-radius:20px;overflow:hidden;max-width:800px;width:100%;position:relative}
+.closeBtn{position:absolute;top:1rem;right:1rem;z-index:10;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:rgba(0,0,0,.5);color:#fff;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s}
+.closeBtn:hover{background:var(--accent)}
+.lightboxImg{position:relative;aspect-ratio:16/10}
+.lightboxMeta{padding:1.5rem 2rem 2rem}
+.lightboxDesc{color:var(--muted);margin-top:.75rem;line-height:1.7}
+
+@media(max-width:1024px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
