@@ -443,14 +443,11 @@ export const footerData: FooterData = {
     { label: "Label Design", href: "#how-it-works" },
   ],
   contact: {
-    email: "hello@drinkwellcustoms.com",
-    phone: "+91 98765 43210",
-    address: "Mumbai, Maharashtra, India",
+    email: "drinkwellcustoms@gmail.com",
+    phone: "+91 9294680350",
+    address: "India",
   },
   socials: [
-    { platform: "Instagram", href: "#", icon: "instagram" },
-    { platform: "LinkedIn", href: "#", icon: "linkedin" },
-    { platform: "Twitter", href: "#", icon: "twitter" },
-    { platform: "Facebook", href: "#", icon: "facebook" },
+    { platform: "Instagram", href: "https://instagram.com/drinkwellcustoms.in", icon: "instagram" },
   ],
 };

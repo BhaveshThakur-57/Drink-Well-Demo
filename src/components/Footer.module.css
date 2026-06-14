@@ -1,19 +1,165 @@
-.footer{border-top:1px solid var(--border);padding-top:4rem;background:var(--bg-secondary)}
-.grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.25fr;gap:3rem;padding-bottom:3rem}
-.brand{max-width:320px}
-.logo{display:flex;align-items:center;gap:.625rem;margin-bottom:1rem}
-.logoMark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--cyan));display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-weight:700;font-size:.875rem;color:#fff}
-.logoText{font-family:var(--font-heading);font-weight:700;font-size:1.15rem}
-.tagline{color:var(--muted);font-size:.9rem;line-height:1.6;margin-bottom:1.25rem}
-.socials{display:flex;gap:.625rem}
-.socialLink{width:36px;height:36px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem;color:var(--muted);transition:all .3s}
-.socialLink:hover{border-color:var(--accent);color:var(--accent);background:rgba(29,155,240,.08)}
-.col{display:flex;flex-direction:column;gap:.625rem}
-.colTitle{font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text);margin-bottom:.5rem}
-.link{color:var(--muted);font-size:.9rem;transition:color .3s}
-.link:hover{color:var(--accent)}
-.bottom{border-top:1px solid var(--border);padding:1.5rem 0}
-.copy{color:var(--muted);font-size:.8rem;text-align:center}
+/* ══════════════════════════════════════════════
+   Footer — Premium Design
+   ══════════════════════════════════════════════ */
 
-@media(max-width:1024px){.grid{grid-template-columns:1fr 1fr;gap:2rem}}
-@media(max-width:640px){.grid{grid-template-columns:1fr}.brand{max-width:none}}
+.footer {
+  border-top: 1px solid var(--border);
+  padding-top: 4rem;
+  background: var(--bg-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* ── Brand column ── */
+.brand {
+  max-width: 340px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 1rem;
+}
+
+.logoMark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--cyan));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.logoText {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Socials ── */
+.socials {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.socialLink {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(29, 155, 240, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ── Columns ── */
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.colTitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.link {
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: var(--accent);
+  padding-left: 4px;
+}
+
+/* ── Contact links with icons ── */
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  color: var(--accent);
+}
+
+.contactLink svg {
+  flex-shrink: 0;
+  color: var(--accent);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.contactLink:hover svg {
+  opacity: 1;
+}
+
+/* ── Bottom bar ── */
+.bottom {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+
+.copy {
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* ══════════════════════════════════════════════
+   Responsive
+   ══════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand {
+    max-width: none;
+  }
+}
